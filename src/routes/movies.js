@@ -1,5 +1,6 @@
 const {Router} = require('express');
 const router = Router();
+const _ = require('underscore');
 
 
 const movies = require('../sample.json');
@@ -17,9 +18,13 @@ router.post('/',(req,res) => {
 });
 
 router.delete('/:id',(req,res) => {
-    console.log(req.params);
-    res.send('delete');
-
+    const {id} = req.params;
+    _.each(movies,(movie,i) => {
+        if (movie.id == id) {
+            movies.splice(i, 1);
+        }
+    });
+    res.send(movies);
 });
 
 module.exports = router;
