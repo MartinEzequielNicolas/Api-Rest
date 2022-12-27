@@ -1,0 +1,17 @@
+[
+    {
+        "id" : "1",
+        "tittle" : "Aliens",
+        "director" : "James Cameron",
+        "year" : "1986",
+        "rating" : "8.5"
+    },
+
+    {
+        "id" : "2",
+        "tittle" : "y donde estan las rubias",
+        "director" : "James Cameron",
+        "year" : "2004",
+        "rating" : "9.0"
+    }
+]
